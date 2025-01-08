@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "⚠️  WARNING: This script requires Cloudron to be fully installed (domain setup, dashboard ready)"
+read -p "Are you sure you want to continue? (y/n): " confirm1
+if [[ $confirm1 != "y" ]]; then
+    echo "Operation cancelled."
+    exit 1
+fi
+
+echo "Modifying apps.js..."
+if sed -i 's/await purchaseApp/\/\/await purchaseApp/' /home/yellowtent/box/src/apps.js; then
+    echo "✅ Successfully commented out purchase verification"
+else
+    echo "❌ Failed to modify file"
+    exit 1
+fi
+
+echo "⚠️  The server needs to be rebooted for changes to take effect"
+echo "⚠️  If you don't reboot now, the modification won't work"
+read -p "Reboot now? (y/n): " confirm2
+if [[ $confirm2 != "y" ]]; then
+    echo "❌ Cancelled. Changes won't take effect until reboot"
+    exit 1
+fi
+
+echo "🔄 Rebooting system..."
+sudo reboot
