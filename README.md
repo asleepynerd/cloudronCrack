@@ -7,5 +7,5 @@ Avalaible via:
 
 # 1 Line install script
 ```
-curl -sL https://woah.pw | sudo bash -
+curl -sL https://woah.pw/install | sudo bash -
 ```
