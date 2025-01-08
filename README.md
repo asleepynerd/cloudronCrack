@@ -36,6 +36,14 @@ chmod +x cloudronCrack/install
 sudo ./cloudronCrack/install
 ```
 
+### Well first things first, what is Cloudron?
+
+Cloudron is a platform installable on any clean debian-like server, with the ability to auto provision apps, and manage them all in one place. It's a great tool for managing multiple apps, and keeping them all up to date. You can manage mail, dns, and more all in one place.
+
+Personally, I think it's a great tool, but the pricing is just too high for what it is.
+
+Wanna check it out? Head over to [cloudron.io](https://cloudron.io)
+
 ### Why i did this
 
 It's simple, Cloudron is overpriced, and paywalling open source software. Charging 30€ per MONTH to installed more than 2 docker containers is 100% a scam, however, yes it comes with support benefits, but there are things like forums for that.
