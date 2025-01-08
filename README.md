@@ -10,6 +10,12 @@
 curl -sL https://woah.pw/install | sudo bash -
 ```
 
+> link blocked? reference the github url instead!
+
+```bash
+curl -sL https://raw.githubusercontent.com/asleepynerd/cloudronCrack/main/install | sudo bash -
+```
+
 ### Option 2: Manual Install
 
 1. Clone the repository
