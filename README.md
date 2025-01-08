@@ -1,13 +1,33 @@
-# cloudronCrack
-Get free infinite apps on cloudron !
+# cloudronCrack 🚀
 
-Avalaible via:
+> Get free infinite apps on Cloudron!
 
-### Cloning this repository and running the script, (you must give it permissions first with chmod+x
+## 🔧 Installation
 
-### 1 Line install script
-```
+### Option 1: One-Line Install
+
+```bash
 curl -sL https://woah.pw/install | sudo bash -
+```
+
+### Option 2: Manual Install
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/asleepynerd/cloudronCrack.git
+```
+
+2. Give the script executable permissions
+
+```bash
+chmod +x cloudronCrack/install
+```
+
+3. Run the script
+
+```bash
+sudo ./cloudronCrack/install
 ```
 
 ### Why i did this
@@ -22,4 +42,18 @@ However, while doing some inspecting last night, it turns out, it was much, much
 
 It was in the box/src/apps.js file, in the yellowtent user thats created when cloudron is installed. the line `await purchaseApp()...`, is the only thing that stood between the app installation, and the lookup of the app. all it does is make a request to the cloudron api. theres no callbacks, nothing, it just fails the request if its not valid. So commenting out, just, works!
 
-for more stupid shit, you can see my main site, https://sleepy.engineer
+<br>
+
+## Support
+
+If you found this useful, please consider:
+
+- Starring the repository: [cloudronCrack](https://github.com/asleepynerd/cloudronCrack)
+- Following me on GitHub: [asleepynerd](https://github.com/asleepynerd)
+
+If you have any issues, feel free to open an [issue](https://github.com/asleepynerd/cloudronCrack/issues/new/choose).
+
+<br>
+Links:
+- Wanna see more stupid shit? Head here: [sleepy.engineer](https://sleepy.engineer)
+- The github repo: [cloudronCrack](https://github.com/asleepynerd/cloudronCrack)
