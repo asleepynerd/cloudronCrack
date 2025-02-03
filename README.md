@@ -7,13 +7,13 @@
 ### Option 1: One-Line Install
 
 ```bash
-curl -sL https://woah.pw/install | sudo bash -
+bash <(curl -sL https://woah.pw/install)
 ```
 
 > link blocked? reference the github url instead!
 
 ```bash
-curl -sL https://raw.githubusercontent.com/asleepynerd/cloudronCrack/main/install | sudo bash -
+bash <(curl -sL https://raw.githubusercontent.com/asleepynerd/cloudronCrack/main/install)
 ```
 
 ### Option 2: Manual Install
